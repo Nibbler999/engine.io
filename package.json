@@ -28,12 +28,12 @@
     "accepts": "1.3.3",
     "base64id": "0.1.0",
     "debug": "2.2.0",
-    "engine.io-parser": "1.2.4",
-    "ws": "1.1.1"
+    "engine.io-parser": "Nibbler999/engine.io-parser",
+    "ws": "Nibbler999/ws"
   },
   "devDependencies": {
     "babel-preset-es2015": "6.3.13",
-    "engine.io-client": "1.6.11",
+    "engine.io-client": "Nibbler999/engine.io-client",
     "expect.js": "0.2.0",
     "gulp": "3.9.0",
     "gulp-babel": "6.1.1",
@@ -49,6 +49,6 @@
   },
   "repository": {
     "type": "git",
-    "url": "git@github.com:socketio/engine.io.git"
+    "url": "git@github.com:Nibbler999/engine.io.git"
   }
 }
