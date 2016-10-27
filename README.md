@@ -1,7 +1,7 @@
 
 # Engine.IO: the realtime engine
 
-[![Build Status](https://secure.travis-ci.org/socketio/engine.io.svg)](http://travis-ci.org/socketio/engine.io)
+[![Build Status](https://travis-ci.org/socketio/engine.io.svg?branch=master)](http://travis-ci.org/socketio/engine.io)
 [![NPM version](https://badge.fury.io/js/engine.io.svg)](http://badge.fury.io/js/engine.io)
 
 `Engine.IO` is the implementation of transport-based
@@ -199,6 +199,7 @@ to a single process.
         consider the connection closed (`60000`)
       - `pingInterval` (`Number`): how many ms before sending a new ping
         packet (`25000`)
+      - `upgradeTimeout` (`Number`): how many ms before an uncompleted transport upgrade is cancelled (`10000`)
       - `maxHttpBufferSize` (`Number`): how many bytes or characters a message
         can be when polling, before closing the session (to avoid DoS). Default
         value is `10E7`.

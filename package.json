@@ -1,6 +1,6 @@
 {
   "name": "engine.io",
-  "version": "1.6.11",
+  "version": "1.7.2",
   "description": "The realtime engine behind Socket.IO. Provides the foundation of a bidirectional connection between client and server",
   "main": "./lib/engine.io",
   "author": "Guillermo Rauch <guillermo@learnboost.com>",
@@ -51,5 +51,9 @@
   "repository": {
     "type": "git",
     "url": "git@github.com:Nibbler999/engine.io.git"
-  }
+  },
+  "files": [
+    "index.js",
+    "lib/"
+  ]
 }
