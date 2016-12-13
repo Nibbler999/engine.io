@@ -10,12 +10,12 @@ var eio = require('..');
  */
 
 exports.listen = function (opts, fn) {
-  if ('function' == typeof opts) {
+  if ('function' === typeof opts) {
     fn = opts;
     opts = {};
   }
 
-  var e = eio.listen(null, opts, function () {
+  var e = eio.listen(0, opts, function () {
     fn(e.httpServer.address().port);
   });
 
