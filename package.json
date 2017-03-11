@@ -1,6 +1,6 @@
 {
   "name": "engine.io",
-  "version": "2.0.1",
+  "version": "2.1.0",
   "description": "The realtime engine behind Socket.IO. Provides the foundation of a bidirectional connection between client and server",
   "main": "./lib/engine.io",
   "author": "Guillermo Rauch <guillermo@learnboost.com>",
@@ -50,7 +50,7 @@
     "superagent": "0.15.4"
   },
   "optionalDependencies": {
-    "uws": "0.12.0"
+    "uws": "0.13.0"
   },
   "scripts": {
     "test": "gulp test; EIO_WS_ENGINE=ws gulp test;"

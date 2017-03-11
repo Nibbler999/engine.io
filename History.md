@@ -1,4 +1,16 @@
 
+2.1.0  / 2017-03-11
+===================
+
+  * [feat] Add an option to toggle handling of OPTIONS requests (#491)
+  * [chore] Bump engine.io-parser to version 2.0.1 (#490)
+  * [chore] Bump uws to version 0.13.0 (#489)
+
+2.0.2  / 2017-02-16
+===================
+
+  * [chore] Bump ws to version 1.1.2 (vulnerability fix) (#480)
+
 2.0.1  / 2017-01-30
 ===================
 
