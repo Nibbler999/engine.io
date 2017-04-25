@@ -27,7 +27,7 @@
   "dependencies": {
     "accepts": "1.3.3",
     "base64id": "1.0.0",
-    "debug": "2.3.3",
+    "debug": "~2.6.4",
     "engine.io-parser": "Nibbler999/engine.io-parser",
     "http-tcp-packets": "^2.0.0",
     "ws": "^2.0.0",
