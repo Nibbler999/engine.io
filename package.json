@@ -29,7 +29,7 @@
     "base64id": "1.0.0",
     "debug": "~2.6.4",
     "engine.io-parser": "Nibbler999/engine.io-parser",
-    "http-tcp-packets": "^2.0.0",
+    "http-tcp-packets": "^2.3.0",
     "ws": "^2.0.0",
     "cookie": "0.3.1"
   },
