@@ -201,7 +201,7 @@ to a single process.
         packet (`25000`)
       - `upgradeTimeout` (`Number`): how many ms before an uncompleted transport upgrade is cancelled (`10000`)
       - `maxHttpBufferSize` (`Number`): how many bytes or characters a message
-        can be when polling, before closing the session (to avoid DoS). Default
+        can be, before closing the session (to avoid DoS). Default
         value is `10E7`.
       - `allowRequest` (`Function`): A function that receives a given handshake
         or upgrade request as its first parameter, and can decide whether to
@@ -226,7 +226,7 @@ to a single process.
         option. If false, no path will be sent, which means browsers will only send the cookie on the engine.io attached path (`/engine.io`).
         Set false to not save io cookie on all requests. (`/`)
       - `cookieHttpOnly` (`Boolean`): If `true` HttpOnly io cookie cannot be accessed by client-side APIs, such as JavaScript. (`true`) _This option has no effect if `cookie` or `cookiePath` is set to `false`._
-      - `wsEngine` (`String`): what WebSocket server implementation to use. Specified module must conform to the `ws` interface (see [ws module api docs](https://github.com/websockets/ws/blob/master/doc/ws.md)). Default value is `ws`. An alternative c++ addon is also available by installing `uws` module.
+      - `wsEngine` (`String`): what WebSocket server implementation to use. Specified module must conform to the `ws` interface (see [ws module api docs](https://github.com/websockets/ws/blob/master/doc/ws.md)). Default value is `uws` (see [µWebSockets](https://github.com/uWebSockets/uWebSockets)).
       - `initialPacket` (`Object`): an optional packet which will be concatenated to the handshake packet emitted by Engine.IO.
 - `close`
     - Closes all clients
@@ -261,7 +261,7 @@ to a single process.
     - Overwrite this method to generate your custom socket id.
     - **Parameters**
       - `http.IncomingMessage`: a node request object
-  - **Returns** A socket id for connected client.
+      - `Function`: a callback method which contains an error (if there is) object and the generated id value
 
 <hr><br>
 
